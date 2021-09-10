@@ -1,0 +1,100 @@
+.results-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-view .nav-tabs {
+  border: 0;
+  background: #34435b;
+  color: lightgrey;
+  font-weight: bold;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.results-view .nav-link,
+.results-view .nav-link.active {
+  border: 0;
+  border-radius: 0;
+  padding: 0 14px;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.results-view .nav-link:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.results-view .nav-link.active {
+  color: #080400 !important;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.results-view .tab-content {
+  flex: 1;
+  overflow: auto;
+}
+
+.results-view .tab-pane {
+  height: 100%;
+}
+
+.results-table td,
+.results-table th {
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+/* 
+
+*/
+
+.editor-area {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-area .editor-menu {
+  display: flex;
+  flex-shrink: 0;
+  background: #34435b;
+}
+
+.editor-area .editor-menu button {
+  height: 32px;
+  padding: 0 16px;
+  background: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: none !important;
+}
+
+.editor-area .editor-menu button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.editor-area .editor-menu button:not(:disabled):hover {
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.editor-area .editor-menu button:not(:disabled):active {
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.editor-area .editor-menu button > svg {
+  margin-right: 4px;
+}
+
+.editor-area .ace-editor {
+  flex: 1;
+}
